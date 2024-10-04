@@ -30,7 +30,7 @@ const buttonStyles = cva(
       {
         variant: "solid",
         colorscheme: "primary",
-        className: "bg-primary-500 hover:bg-primary-600",
+        className: "bg-primary-500 hover:bg-primary-600 active:bg-blue-400 active:size-[95%]",
       },
       {
         variant: "outline",
