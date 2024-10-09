@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/ui-comps-umd.cjs",
+  "module": "dist/ui-comps.js",
+  "exports": {
+    ".": {
+      "import": "./dist/ui-comps.js",
+      "require": "./dist/ui-comps-umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -44,6 +55,7 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.3",
     "vite-tsconfig-paths": "^5.0.1"
   },
   "eslintConfig": {
